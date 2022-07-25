@@ -24,7 +24,7 @@ body {
 /*}*/
 
 .navbar {
-    background-color: #56b2ff;
+    background-color: #bbbcbc;
 }
 
 
@@ -44,9 +44,9 @@ body {
 /*}*/
 
 .footer {
-    background-color: #363636;
+    background-color: #002855;
     font-size: 13px;
-    color: #56b2ff;
+    color: #ffcc33;
 }
 
 .footer-logo {
@@ -55,7 +55,7 @@ body {
 }
 
 div.copyright {
-    border-right: 1px solid #56b2ff;
+    border-right: 1px solid #ffcc33;
     float: left;
     padding-right: 5px;
 
