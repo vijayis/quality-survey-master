@@ -1,0 +1,18 @@
+{% block title %}Quality Survey{% endblock %}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome</h1>
+        <p class="lead">Start by entering your Case ID.</p>
+        <hr class="my-4">
+    </div><!-- ./jumbotron -->
+
+    {{ form_start(form, { 'attr': {'class': 'form-inline'} }) }}
+
+    {{ form_errors(form) }}
+
+    {{ form_end(form) }}
+
+{% endblock %}

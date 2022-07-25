@@ -1,0 +1,39 @@
+{% block title %}Quality Survey{% endblock %}
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Your Opinion Matters</h1>
+        <p class="lead">Tell us how we're doing. Please provide us with your case feedback.</p>
+        <hr class="my-4">
+    </div><!-- ./row -->
+    <div class="row">
+        <div class="col-sm-6"><h4>{{ category }}: Evaluation</h4></div>
+        <div class="col-sm-6"><h4>Case: {{ case_id }} {{ doctor_name }}</h4></div>
+        <div class="w-100"></div>
+    </div><!-- ./row -->
+    <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6"><h4><span>Patient: ({{ patient_name }})</span></h4></div>
+        <div class="w-100"></div>
+    </div><!-- ./row -->
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Please rate: 1 - Unacceptable, 5 - Excellent.</h3>
+        </div><!-- ./col-sm-12 -->
+        <div class="w-100"></div>
+    </div><!-- ./row -->
+    <br>
+
+    {{ form_start(form, { 'attr': {'class': 'form-group'} }) }}
+
+    {{ form_errors(form) }}
+
+    {{ form_rest(form) }}
+
+    {{ form_end(form) }}
+
+{% endblock %}

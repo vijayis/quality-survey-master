@@ -1,0 +1,15 @@
+{% block title %}Error!{% endblock %}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {% for message in app.flashes('danger') %}
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Oops, there was an error!</h4>
+            <p>{{ message }}</p>
+            <hr>
+            <p class="mb-0">Quality matters at DSG. Please provide us with feedback on your next case.</p>
+        </div><!-- ./alert alert-danger -->
+    {% endfor %}
+
+{% endblock %}

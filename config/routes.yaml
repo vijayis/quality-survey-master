@@ -1,0 +1,22 @@
+index:
+  path: /
+  controller: App\Controller\DefaultController::index
+
+customer_survey:
+  path: /cfb/{code}/{caseId}/{category}/{caseDb}
+  controller: App\Controller\QCSurveyController::qcSurvey
+
+# Static pages
+thank_you:
+  path: /cfb/thank-you
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: static/thank-you.html.twig
+  methods: GET
+
+already_submitted:
+  path: /cfb/already-submitted
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: static/alreadySubmitted.html.twig
+  methods: GET

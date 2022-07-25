@@ -1,0 +1,216 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    /*display: flex;*/
+    /*display: -webkit-flex; */
+    /*flex-direction: column;*/
+    /*-webkit-flex-direction: column;*/
+    color: #192844;
+    font-family: "Nexa","Myriad Pro",Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+
+/*body {*/
+/*    display: -ms-flexbox;*/
+/*    display: flex;*/
+/*    !*-ms-flex-align: center;*!*/
+/*    !*align-items: center;*!*/
+/*    !*padding-top: 125px;*!*/
+/*    !*padding-bottom: 40px;*!*/
+/*    background-color: #ffffff;*/
+/*}*/
+
+.navbar {
+    background-color: #56b2ff;
+}
+
+
+/*.content {*/
+/*    flex: 1 0 auto;*/
+/*    -webkit-flex: 1 0 auto;*/
+/*    flex-shrink: 0;*/
+/*    -webkit-flex-shrink: 0;*/
+/*}*/
+
+.content {
+    min-height: 100%;
+}
+/*.content-inside {*/
+/*    padding: 20px;*/
+/*    padding-bottom: 50px;*/
+/*}*/
+
+.footer {
+    background-color: #363636;
+    font-size: 13px;
+    color: #56b2ff;
+}
+
+.footer-logo {
+    width: 100px;
+    padding-left: 10px;
+}
+
+div.copyright {
+    border-right: 1px solid #56b2ff;
+    float: left;
+    padding-right: 5px;
+
+}
+
+
+h1, h2 {
+    font-family: "Nexa XBold", "Myriad Pro", Helvetica, Arial, sans-serif;
+
+}
+
+input[type="radio"] + label {
+    padding: 5px;
+    margin:auto 5px 5px auto;
+}
+
+/*label.general-comment {*/
+/*    display: block;*/
+/*}*/
+
+label.break {
+    /*float: left;*/
+    /*display: inline;*/
+    /*margin-right: 40px;*/
+    font-size: 18px;
+}
+
+@media screen and (max-width: 479px) {
+    label.break {
+        margin-right: 180px;
+    }
+
+    input[type="radio"] + label {
+        padding: 2px;
+        margin:auto 2px 2px auto;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    label.break {
+        margin-right: 220px;
+    }
+}
+
+/*.parent {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+/*label.h5.required:after {*/
+/*    content:"*";color:#CC0000;*/
+/*}*/
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.submitted-by {
+    margin-bottom: 10px;
+}
+
+
+
+/* .btn-primary override */
+
+*.btn-primary {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5);
+}
+
+.btn-outline-primary {
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: none;
+    border-color: #56B2FF;
+}
+
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5);
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #FFFFFF;
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #FFFFFF;
+    background-color: #56B2FF;
+    border-color: #56B2FF;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5);
+}
+
+
+/* End .btn-primary override */
+
+
+.jumbotron {
+    background-image: linear-gradient(35deg,#05387c 50%,#56b2ff 150%);
+    color: #ffffff;
+    padding: 1rem;
+}
+
+hr  {
+    border-color: #ffffff;
+}
+
+
